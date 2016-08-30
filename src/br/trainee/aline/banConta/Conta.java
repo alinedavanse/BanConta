@@ -1,6 +1,6 @@
 package br.trainee.aline.banConta;
 
-public class Conta {
+public abstract class Conta {
 
     double saldo;
 
@@ -21,8 +21,6 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
-	public void atualiza(double taxa) {
-		this.saldo = this.saldo * taxa;
-	}
+	public abstract void atualiza(double taxa);
 
 }
